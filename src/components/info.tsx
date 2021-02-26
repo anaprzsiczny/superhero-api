@@ -22,6 +22,7 @@ const Info = () => {
             <CardContent>
               <Typography variant="h2">{item.name}</Typography>
               <Typography variant="h3">{item.biography.fullName}</Typography>
+              <CardMedia> <img src={item.image.url} alt={item.name} /></CardMedia>
               <Typography variant="body1">{item.biography.alterEgos}</Typography>
               <Typography variant="body1">{item.biography.firstAppearance}</Typography>
               <Typography variant="body1">{item.biography.publisher}</Typography>
@@ -29,7 +30,6 @@ const Info = () => {
               <Typography variant="body2">{item.work.occupation}</Typography>
               <Typography variant="body2">{item.connections.groupAffiliation}</Typography>
               <Typography variant="body2">{item.connections.relatives}</Typography>
-              <CardMedia> <img src={item.image.url} alt={item.name} /></CardMedia>
             </CardContent>
           </Card>
         ))
